@@ -1,0 +1,38 @@
+{
+  "name": "strapi-elasticsearch",
+  "version": "1.0.0",
+  "description": "A plugin to index data to Elasticsearch.",
+  "license": "MIT",
+  "author": {
+    "name": "Vipan Balrai"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.10.0",
+    "@strapi/design-system": "^1.6.3",
+    "@strapi/helper-plugin": "^4.6.0",
+    "@strapi/icons": "^1.6.3",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "react-router-dom": "^5.3.4",
+    "styled-components": "^5.3.6"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "name": "strapi-elasticsearch",
+    "description": "Elasticsearch: A plugin to index data to Elasticsearch.",
+    "kind": "plugin",
+    "displayName": "Strapi Elasticsearch"
+  }
+}
