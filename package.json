@@ -1,6 +1,6 @@
 {
   "name": "plugin-strapi-elasticsearch",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin to index data to Elasticsearch.",
   "license": "MIT",
   "author": {
