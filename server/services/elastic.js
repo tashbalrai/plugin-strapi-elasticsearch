@@ -47,7 +47,8 @@ module.exports = ({ strapi }) => ({
         datasource: helper.getDataToIndex(event, modelConfig),
         onDocument(doc) {
           if (
-            event.action.toLowerCase().includes("update") &&
+            (event.action.toLowerCase().includes("update") ||
+              event.action.toLowerCase().includes("create")) &&
             event.params?.data?.publishedAt
           ) {
             return {

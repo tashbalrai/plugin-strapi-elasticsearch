@@ -55,6 +55,8 @@ module.exports = ({ strapi }) => {
     beforeDelete: loadEventData,
     beforeDeleteMany: loadEventData,
     afterUpdate: dispatchEvent,
+    afterCreate: dispatchEvent,
+    afterCreateMany: dispatchEvent,
     afterDelete: dispatchEvent,
     afterUpdateMany: dispatchEvent,
     afterDeleteMany: dispatchEvent,
