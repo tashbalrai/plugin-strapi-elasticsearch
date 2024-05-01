@@ -57,7 +57,7 @@ module.exports = ({ strapi }) => ({
           } else if (
             event.action.toLowerCase().includes("delete") ||
             (event.action.toLowerCase().includes("update") &&
-              !event.params?.data?.publishedAt)
+              !event.state?.data?.[0].publishedAt)
           ) {
             return {
               delete: { _index: modelConfig.indexName, _id: doc.objectID },
